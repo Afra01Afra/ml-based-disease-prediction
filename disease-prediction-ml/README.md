@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ### 4. Run the Project
 
 ```bash
-python main.py
+python main2.py
 ```
 
 This will execute the entire pipeline from data loading to final disease prediction.
