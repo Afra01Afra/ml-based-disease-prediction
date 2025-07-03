@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is an end-to-end machine learning project that predicts diseases based on user-reported symptoms. The entire code is contained in a single Python file, making it simple and self-contained. It includes data preprocessing, exploratory analysis, handling class imbalance, training multiple machine learning models, evaluation using various metrics, robustness testing, and a prediction function for real-time symptom-based disease prediction.
+This ML system predicts diseases from symptoms using XGBoost (handles sparse data well), CatBoost (excels with categorical features), and LightGBM (optimized for speed). We preprocess symptom data, address class imbalance with SMOTE, train/evaluate models, and deploy a prediction function showing top-3 likely diseases with confidence scores.
 
 ## What This Project Does
 
@@ -30,7 +30,7 @@ This is an end-to-end machine learning project that predicts diseases based on u
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/disease-prediction-ml.git
+git clone https://github.com/Afra01Afra/disease-prediction-ml.git
 cd disease-prediction-ml
 ```
 
@@ -88,20 +88,6 @@ imbalanced-learn
 jupyter
 ```
 
-## How the Code is Structured (In One File)
-
-The file is divided into the following clear sections:
-
-* Importing required libraries
-* Loading and cleaning the dataset
-* Data visualization (EDA)
-* Preprocessing and encoding
-* SMOTE for balancing
-* Model training
-* Evaluation on validation and test sets
-* Robustness testing with noise
-* Final comparison and best model selection
-* Disease prediction function using symptoms
 
 ## Metrics Used for Evaluation
 
